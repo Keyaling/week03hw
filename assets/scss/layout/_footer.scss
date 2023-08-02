@@ -1,0 +1,135 @@
+.footer{
+    background-color: $primary-color;
+    color: $white;
+    padding-top: 48px;
+    a{
+        color: $white;
+    }
+}
+.top-info{
+    .footer-menu{
+        li{
+            margin-right: 48px;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+    .social-icon{
+        li{
+            margin-right: 32px;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+        img{
+            width: 48px;
+            height: 48px;
+        }
+    }
+    .footer-contact{
+        font-size: $font-size-xl;
+        margin-top: 24px;
+        margin-bottom: 32px;
+        li{
+            margin-bottom: 8px;
+        }
+    
+        .material-symbols-outlined{
+            font-size: $font-size-xxl;
+            margin-right: 16px;
+            display: inline-block;
+            vertical-align:top;
+        }
+    }
+}
+
+
+.bottom-info{
+    border-top: 1px solid $white;
+    align-items: center;
+    li{
+        font-size: $font-size-s;
+        margin-left: 48px;
+        padding: 32px 0;
+    }
+}
+
+
+@media(max-width:992px){
+    .footer-menu{
+        li{
+            margin-right: 48px;
+        }
+    }
+    .social-icon{
+        li{
+            margin-right: 16px;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+        img{
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
+
+@media(max-width:767px){
+    .top-info{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        .social-icon{
+            li{
+                margin-right: 8px;
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+            img{
+                width: 24px;
+                height: 24px;
+            }            
+        }
+        .footer-contact{
+            font-size: $font-size-base;
+            display: flex;
+            flex-direction: column;
+            align-self: flex-start;
+            margin-top:0px;
+            margin-bottom: 24px;
+            li{
+                margin-bottom: 8px;
+    
+            }
+            .material-symbols-outlined{
+                font-size: $font-size-m;
+            }
+        
+        }
+    }
+    ul.footer-menu{
+        display: none;
+            
+    }
+
+    .bottom-info{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px 0;
+        p{
+            margin-bottom: 8px;
+        }
+        ul{
+            flex-direction: column;
+            li{
+                padding: 0;
+                margin-left: 0;
+                font-size: $font-size-base;
+                margin-bottom: 8px;
+            }
+        }
+    }
+}   

@@ -1,0 +1,254 @@
+// .index-title {
+//   font-size: 100px;
+// }
+.container{
+  max-width: 1296px;
+  margin: 0 auto;
+}
+h1{
+  font-size: $font-size-xxxl;
+  color: $secondary-color;
+}
+h2{
+  font-size: $font-size-xxl;
+  text-align: center;
+  margin-bottom: 48px;
+}
+h3{
+  font-size: $font-size-xl;
+}
+h4{
+  font-size: $font-size-l;
+}
+h5{
+  font-size: $font-size-m;
+}
+h6{
+  font-size: $font-size-base;
+}
+.font-red{
+  color: $secondary-color;
+}
+.font-white{
+  color: $white;
+}
+.font-black{
+  color: $black;
+}
+
+.font-style2{
+  color: #AA0601;
+  font-size: 48px;
+  font-style: italic;
+  font-weight: 900;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff;
+}
+.font-style3{
+  font-size: 14px;
+  color: #707070;
+}
+
+.btn{
+  background-color: #AA0601;
+}
+// about
+.about{
+  background-color: #FBF2F2;
+  h2{
+    margin-bottom: 24px;
+  }
+}
+.about_items{
+  margin: 0 -12px;
+}
+.item_cards{
+  width:25%;
+  padding: 0 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img{
+    width: 32.7%;
+  }
+  h4{
+    margin: 16px 0 8px 0;
+  }
+}
+// classic
+.series{
+  margin: 0 -12px;
+}
+.series-item{
+  width: 33.33%;
+  padding: 0 12px;
+  p{
+    margin-top: 8px;
+  }
+}
+
+// co-branding
+.co-branding{
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.design-item{
+  width: 50%;
+  .designImg1-mb,.designImg2-mb{
+    display: none;
+  }
+  p{
+    padding: 8px 0px;
+  }
+}
+
+// recommend
+.recommendBox{
+  margin: 0 -12px;
+  align-items:stretch;
+}
+.peopleCard{
+  width: 25%;
+  padding: 0 12px;
+}
+.cardBox{
+  border: 1px solid #DEE2E6;
+  box-shadow: 0px 2px 6px  #00000029;
+}
+.card-text{
+  padding: 16px 12px;
+    p{
+      margin: 8px 0 48px 0;
+    }
+}
+// contact
+.contact{
+  background-color: #FBF2F2;
+}
+.contact-text{
+  width: 50%;
+  margin: 0 auto;
+  padding: 0 6px;
+  p{
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+}
+.inputBox{
+  width: 100%;
+  font-size: 16px;
+  margin: 8px 0 16px 0;
+  padding: 6px 12px;
+}
+.checkbox{
+  margin-bottom: 48px;
+}
+
+input.submit-btn{
+  padding: 16px 176px;
+  margin: 0 auto;
+  display: block;
+  font-size: $font-size-base;
+  border: 0;
+}
+@media(max-width:992px){
+  .container{
+    padding: 0 36px;
+    // max-width: 696px;
+    h2{
+      font-size: 24px;
+    }
+  }
+  .about_items{
+    flex-wrap: wrap;
+    .item_cards{
+      width: 50%;
+      margin-bottom: 24px;
+    }
+  }
+  .series{
+    flex-wrap: wrap;
+    .series-item{
+      width: 50%;
+      margin-bottom: 24px;
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+  }
+  .design{
+    flex-wrap: wrap;
+    .design-item{
+      width: 100%;
+      margin-bottom: 24px;
+    }
+  }
+  .recommendBox{
+    flex-wrap: wrap;
+    .peopleCard{
+      width: 50%;
+      margin-bottom: 24px;
+    }
+  }
+  .contact-text{
+    width: 83%;
+  }
+
+
+}
+
+@media(max-width:767px){
+  .container{
+    padding: 0 14px;
+    // max-width: 345px;
+  }
+  .about{
+    h2{
+      font-size: 24px;
+    }
+    .item_cards{
+      width: 100%;
+      margin-bottom: 24px;
+    }
+  }
+  .series{
+    .series-item{
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }   
+  }
+  .design-item{
+    .designImg1-mb,.designImg2-mb{
+      display: block;
+      width: 100%;
+    }
+    .designImg1-pc,.designImg2-pc{
+      display: none;
+    }
+    p{
+      padding: 8px 0px;
+    }
+  }
+  .recommendBox{
+    .peopleCard{
+      width: 100%;
+      img{
+        width: 100%;
+      }
+    }
+  }  
+  .contact-text{
+    width: 100%;
+    padding: 0;
+    .checkbox{
+      margin-bottom: 0;
+    }
+  }
+  input.submit-btn{
+    padding: 16px 139px;
+    margin-top: 24px;
+  }
+
+}
