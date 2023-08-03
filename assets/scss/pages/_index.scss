@@ -38,7 +38,7 @@ h6{
 
 .font-style2{
   color: #AA0601;
-  font-size: 48px;
+  font-size: $font-size-xxl;
   font-style: italic;
   font-weight: 900;
   text-align: center;
@@ -46,13 +46,15 @@ h6{
   background-color: #fff;
 }
 .font-style3{
-  font-size: 14px;
+  font-size: $font-size-s;
   color: #707070;
 }
 
 .btn{
   background-color: #AA0601;
 }
+
+
 // about
 .about{
   background-color: #FBF2F2;
@@ -76,6 +78,7 @@ h6{
     margin: 16px 0 8px 0;
   }
 }
+
 // classic
 .series{
   margin: 0 -12px;
@@ -105,23 +108,27 @@ h6{
 }
 
 // recommend
-.recommendBox{
-  margin: 0 -12px;
-  align-items:stretch;
+.recommend{
+  .recommendBox{
+    margin: 0 -12px;
+    align-items: stretch;
+  }
 }
+
 .peopleCard{
   width: 25%;
   padding: 0 12px;
+  display: flex;
+  align-self: stretch;
+
+  
 }
 .cardBox{
   border: 1px solid #DEE2E6;
   box-shadow: 0px 2px 6px  #00000029;
 }
 .card-text{
-  padding: 16px 12px;
-    p{
-      margin: 8px 0 48px 0;
-    }
+  padding: 16px;
 }
 // contact
 .contact{
@@ -138,7 +145,7 @@ h6{
 }
 .inputBox{
   width: 100%;
-  font-size: 16px;
+  font-size: $font-size-base;
   margin: 8px 0 16px 0;
   padding: 6px 12px;
 }
@@ -153,12 +160,14 @@ input.submit-btn{
   font-size: $font-size-base;
   border: 0;
 }
+
+
+
 @media(max-width:992px){
   .container{
     padding: 0 36px;
-    // max-width: 696px;
     h2{
-      font-size: 24px;
+      font-size: $font-size-l;
     }
   }
   .about_items{
@@ -201,12 +210,8 @@ input.submit-btn{
 @media(max-width:767px){
   .container{
     padding: 0 14px;
-    // max-width: 345px;
   }
   .about{
-    h2{
-      font-size: 24px;
-    }
     .item_cards{
       width: 100%;
       margin-bottom: 24px;
@@ -234,6 +239,7 @@ input.submit-btn{
   .recommendBox{
     .peopleCard{
       width: 100%;
+      justify-content: center;
       img{
         width: 100%;
       }
