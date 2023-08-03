@@ -111,7 +111,7 @@ h6{
 .recommend{
   .recommendBox{
     margin: 0 -12px;
-    align-items: stretch;
+    // align-items: stretch;
   }
 }
 
@@ -119,9 +119,6 @@ h6{
   width: 25%;
   padding: 0 12px;
   display: flex;
-  align-self: stretch;
-
-  
 }
 .cardBox{
   border: 1px solid #DEE2E6;
@@ -129,6 +126,7 @@ h6{
 }
 .card-text{
   padding: 16px;
+
 }
 // contact
 .contact{
@@ -154,7 +152,7 @@ h6{
 }
 
 input.submit-btn{
-  padding: 16px 176px;
+  padding: 16px 27.7%;
   margin: 0 auto;
   display: block;
   font-size: $font-size-base;
@@ -170,12 +168,20 @@ input.submit-btn{
       font-size: $font-size-l;
     }
   }
+// about
+  .about{
+    padding-bottom: 56px;
+  }
   .about_items{
     flex-wrap: wrap;
     .item_cards{
       width: 50%;
       margin-bottom: 24px;
     }
+  }
+// classic
+  .classic{
+    padding-bottom: 56px;
   }
   .series{
     flex-wrap: wrap;
@@ -186,12 +192,20 @@ input.submit-btn{
       margin-right: 25%;
     }
   }
+// co-branding
+  .co-branding{
+    padding-bottom: 56px;
+  }
   .design{
     flex-wrap: wrap;
     .design-item{
       width: 100%;
       margin-bottom: 24px;
     }
+  }
+// recommend
+  .recommend{
+    padding-bottom: 56px;
   }
   .recommendBox{
     flex-wrap: wrap;
@@ -200,10 +214,14 @@ input.submit-btn{
       margin-bottom: 24px;
     }
   }
+// contact
   .contact-text{
-    width: 83%;
+    width: 84.5%;
   }
-
+  input.submit-btn{
+    padding-left: 23.66%;
+    padding-right: 23.66%;
+  }
 
 }
 
@@ -211,11 +229,18 @@ input.submit-btn{
   .container{
     padding: 0 14px;
   }
+// about
+
   .about{
+    padding:40px 0;
     .item_cards{
       width: 100%;
       margin-bottom: 24px;
     }
+  }
+// classic
+  .classic{
+    padding:40px 0;
   }
   .series{
     .series-item{
@@ -223,6 +248,10 @@ input.submit-btn{
       margin-left: auto;
       margin-right: auto;
     }   
+  }
+// co-branding
+  .co-branding{
+    padding:40px 0;
   }
   .design-item{
     .designImg1-mb,.designImg2-mb{
@@ -236,6 +265,10 @@ input.submit-btn{
       padding: 8px 0px;
     }
   }
+// recommend
+  .recommend{
+    padding:40px 0;
+  }
   .recommendBox{
     .peopleCard{
       width: 100%;
@@ -245,6 +278,11 @@ input.submit-btn{
       }
     }
   }  
+
+// contact
+  .contact{
+    padding:40px 0;
+  }
   .contact-text{
     width: 100%;
     padding: 0;
@@ -253,7 +291,8 @@ input.submit-btn{
     }
   }
   input.submit-btn{
-    padding: 16px 139px;
+    padding-left: 41%;
+    padding-right: 41%;
     margin-top: 24px;
   }
 
