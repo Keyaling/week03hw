@@ -1,10 +1,10 @@
-// .index-title {
-//   font-size: 100px;
-// }
+
 .container{
   max-width: 1296px;
   margin: 0 auto;
 }
+
+// title
 h1{
   font-size: $font-size-xxxl;
   color: $secondary-color;
@@ -26,6 +26,7 @@ h5{
 h6{
   font-size: $font-size-base;
 }
+// font-color
 .font-red{
   color: $secondary-color;
 }
@@ -54,6 +55,30 @@ h6{
   background-color: #AA0601;
 }
 
+// banner
+.banner{
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 296px 0;
+  .banner-text{
+    text-align: end;
+    a{
+      color: $white;
+      font-size: $font-size-m;
+      &:hover{
+        color: $black;
+      }
+    }
+  }
+}
+
+.banner-btn{
+  padding: 6px 12px;
+  width: 104px;
+  margin: 4px 0 0 auto ;
+
+}
 
 // about
 .about{
@@ -168,6 +193,13 @@ input.submit-btn{
       font-size: $font-size-l;
     }
   }
+// banner
+  .banner{
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
 // about
   .about{
     padding-bottom: 56px;
@@ -229,8 +261,18 @@ input.submit-btn{
   .container{
     padding: 0 14px;
   }
-// about
 
+// banner
+  .banner{
+    padding: 144px 0;
+    h3{
+      font-size: $font-size-base;
+    }
+    h1{
+      font-size: $font-size-l;
+    }
+  }
+// about
   .about{
     padding:40px 0;
     .item_cards{

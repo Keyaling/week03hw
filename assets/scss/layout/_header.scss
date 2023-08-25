@@ -1,8 +1,5 @@
-// .header{
-//   background: #69F0AE;
-//   font-size: 64px;
-// }
 .header{
+  background-color: $primary-color;
   a{
     color: $white;
     font-size: $font-size-m;
@@ -12,81 +9,43 @@
     }
   }
 }
-
-.navBar{
-  background-color: $primary-color;
-  .logoImg{
+.logoImg{
     width: 80px;
     height: 48.57px;
-  }
-  .header-menu {
+}
+.header-menu {
     padding: 25px 0;
     li{
       margin-left: 64px;
 
     }
-  }
-}
-.banner{
-  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true);
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 296px 0;
-  .banner-text{
-    text-align: end;
-  }
-}
-
-.header-btn{
-  padding: 6px 12px;
-  width: 104px;
-  margin: 4px 0 0 auto ;
-}
-
-@media(max-width:992px){
-  .banner{
-    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true);
-    background-repeat: no-repeat;
-    background-size: cover;
-
-  }
 }
 
 
 @media(max-width:767px){
-  .banner{
-    padding: 144px 0;
-    h3{
-      font-size: $font-size-base;
-    }
-    h1{
-      font-size: $font-size-l;
-    }
-  }
-  .navBar{
+  .header{
     div{
       flex-direction: column;
       padding: 0;
-      align-items: stretch;
-      .logoImg{
-        margin: 16px 0 16px 15px;
-      }
-      .header-menu{
-        flex-wrap: wrap;
-        padding: 0;
-        li{
-          width: 50%;
-          margin: 0;
-          border: 1px solid #ffffff;
-        }
-        a{
-          text-align: center;
-          padding: 12px 20%;
-
-        }
-      }
+      align-items: inherit;//繼承.header
     }
   }
-
+  .logoImg{
+    margin: 16px 0 16px 15px;
+  }
+  .header-menu{
+    flex-wrap: wrap;
+    padding: 0;
+    li{
+        width: 50%;
+        margin: 0;
+        border: 1px solid #ffffff;
+    }
+    a{
+        text-align: center;
+        padding: 12px 20%;
+        font-size: $font-size-base;
+    }
+  }
 
 }

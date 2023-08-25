@@ -1,0 +1,41 @@
+.title{
+    h4{
+        margin-bottom: -8px;
+        margin-left: 4px;
+    }
+}
+.faq{
+    margin-left: 4px;
+    margin-bottom: 80px;
+    div{
+        margin-top: 32px;
+        h5{
+            margin-bottom: 8px;
+        }
+    }
+}
+
+@media(max-width:992px){
+    .title{
+        padding-top: 80px;
+    }
+    .faq{
+        div{
+            width: 100%;
+        }
+    }
+}
+@media(max-width:767px){
+    .title{
+        padding-top: 40px;
+        h4{
+            margin-top: -8px;
+        }
+    }
+    .faq{
+        margin-bottom: 64px;
+        div{
+            margin-top: 24px;
+        }
+    }
+}
