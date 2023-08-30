@@ -138,6 +138,7 @@
     margin-right: calc(100%*1/6);
     border: 0;
     font-size: $font-size-base;
+    margin-top: 48px;
   }
 }
 .inputBox{
@@ -146,10 +147,6 @@
   margin: 8px 0 16px 0;
   padding: 6px 12px;
 }
-.checkbox{
-  margin-bottom: 48px;
-}
-
 
 @media(max-width:992px){
   .container{
@@ -282,6 +279,7 @@
       width: 100%;
       margin-left:  0;
       margin-right:  0;
+      margin-top: 24px;
     }
   }
 
