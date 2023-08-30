@@ -9,32 +9,33 @@
 </head>
 <body>
     <%- include('./layout/header'); -%>
-    <div class="container">
+    <div class="container rwd-py2">
         <div class="title">
             <h2 class="fw-bolder">門市據點</h2>
             <div class="title_search">選擇地區
-                <select id="region" value="1">
+                <select id="region" value="1" class="fs-18px">
                     <option value="1">台北市中山旗艦店</option>
                 </select>
             </div>
         </div>
         <div class="shop_content d-flex">
-            <div class="item-content">
-                <div class="content">
-                        <img class="shopImg-pc" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/storepage-1.png?raw=true" alt="門市詳細pc圖片1">
-                        <img class="shopImg-mb" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-1.png?raw=true" alt="門市詳細mb圖片1">
-                    <div class="card">
-                        <p class="card_header">台北中山旗艦店</p>
-                        <ul class="card_body">
-                            <li><a href="tel:+"><span class="material-symbols-outlined">call</span>電話：(02)000-1234</a></li>
-                            <li><span class="material-symbols-outlined">schedule</span>營業時間：10:00-21:00</li>
-                            <li class="address"><span class="material-symbols-outlined">location_on</span><p>地址：台北市中山區南京東路25巷2-1號</p></li>
-                        </ul>
-                    </div>
+            <div class="content">
+                <img class="shopImg-pc" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/storepage-1.png?raw=true" alt="門市詳細pc圖片1">
+                <img class="shopImg-mb" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-1.png?raw=true" alt="門市詳細mb圖片1">
+                <div class="content_text">
+                        <div class="card_border">
+                            <p class="card_header">台北中山旗艦店</p>
+                            <ul class="card_body">
+                                <li><a href="tel:+"><span class="material-symbols-outlined">call</span>電話：(02)000-1234</a></li>
+                                <li><span class="material-symbols-outlined">schedule</span>營業時間：10:00-21:00</li>
+                                <li class="d-flex address"><span class="material-symbols-outlined">location_on</span><p>地址：台北市中山區南京東路25巷2-1號</p></li>
+                            </ul>
+                        </div>
                 </div>
             </div>
-            <img src="../assets/images/map1-sm.jpg" alt="台北中山旗艦店位置圖片" class="mapImg">
-
+            <div class="content_imgBox">
+                <img src="../assets/images/map1-sm.jpg" alt="台北中山旗艦店位置圖片" class="mapImg">
+            </div>
         </div>
     </div>        
     <%- include('./layout/footer'); -%>

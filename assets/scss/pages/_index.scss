@@ -1,58 +1,17 @@
 
 .container{
-  max-width: 1296px;
+  max-width: 1320px;
+  padding-left: 12px;
+  padding-right: 12px;
   margin: 0 auto;
 }
 
-// title
-h1{
-  font-size: $font-size-xxxl;
-  color: $secondary-color;
+.btn1{
+  padding: 6px 12px;
 }
-h2{
-  font-size: $font-size-xxl;
-  text-align: center;
-  margin-bottom: 48px;
-}
-h3{
-  font-size: $font-size-xl;
-}
-h4{
-  font-size: $font-size-l;
-}
-h5{
-  font-size: $font-size-m;
-}
-h6{
-  font-size: $font-size-base;
-}
-// font-color
-.font-red{
-  color: $secondary-color;
-}
-.font-white{
-  color: $white;
-}
-.font-black{
-  color: $black;
-}
-
-.font-style2{
-  color: #AA0601;
-  font-size: $font-size-xxl;
-  font-style: italic;
-  font-weight: 900;
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-  background-color: #fff;
-}
-.font-style3{
-  font-size: $font-size-s;
-  color: #707070;
-}
-
-.btn{
-  background-color: #AA0601;
+.btn2{
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 // banner
@@ -64,8 +23,6 @@ h6{
   .banner-text{
     text-align: end;
     a{
-      color: $white;
-      font-size: $font-size-m;
       &:hover{
         color: $black;
       }
@@ -74,7 +31,6 @@ h6{
 }
 
 .banner-btn{
-  padding: 6px 12px;
   width: 104px;
   margin: 4px 0 0 auto ;
 
@@ -91,9 +47,7 @@ h6{
   margin: 0 -12px;
 }
 .item_cards{
-  width:25%;
   padding: 0 12px;
-  display: flex;
   flex-direction: column;
   align-items: center;
   img{
@@ -109,9 +63,10 @@ h6{
   margin: 0 -12px;
 }
 .series-item{
-  width: 33.33%;
   padding: 0 12px;
   p{
+    font-size: $font-size-xxl;
+    font-style: italic;
     margin-top: 8px;
   }
 }
@@ -136,22 +91,33 @@ h6{
 .recommend{
   .recommendBox{
     margin: 0 -12px;
-    // align-items: stretch;
+
   }
 }
 
 .peopleCard{
-  width: 25%;
+  min-height: 511px;
   padding: 0 12px;
   display: flex;
+  .card-text{
+    padding: 16px;
+
+}
 }
 .cardBox{
   border: 1px solid #DEE2E6;
   box-shadow: 0px 2px 6px  #00000029;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .card-text{
   padding: 16px;
 
+}
+.date{
+  margin: 16px;
+  color: #707070;
 }
 // contact
 .contact{
@@ -160,10 +126,18 @@ h6{
 .contact-text{
   width: 50%;
   margin: 0 auto;
-  padding: 0 6px;
+  display: flex;
+  padding: 0;
+  flex-direction: column;
   p{
-    font-size: 20px;
     margin-bottom: 24px;
+  }
+  button{
+    width: calc(100%*4/6);
+    margin-left: calc(100%*1/6);
+    margin-right: calc(100%*1/6);
+    border: 0;
+    font-size: $font-size-base;
   }
 }
 .inputBox{
@@ -176,19 +150,11 @@ h6{
   margin-bottom: 48px;
 }
 
-input.submit-btn{
-  padding: 16px 27.7%;
-  margin: 0 auto;
-  display: block;
-  font-size: $font-size-base;
-  border: 0;
-}
-
-
 
 @media(max-width:992px){
   .container{
-    padding: 0 36px;
+    padding-left: 32px;
+    padding-right: 32px;
     h2{
       font-size: $font-size-l;
     }
@@ -201,71 +167,68 @@ input.submit-btn{
 
   }
 // about
-  .about{
-    padding-bottom: 56px;
-  }
+
   .about_items{
     flex-wrap: wrap;
     .item_cards{
-      width: 50%;
       margin-bottom: 24px;
     }
   }
 // classic
-  .classic{
-    padding-bottom: 56px;
-  }
   .series{
     flex-wrap: wrap;
     .series-item{
-      width: 50%;
       margin-bottom: 24px;
       margin-left: 25%;
       margin-right: 25%;
     }
   }
 // co-branding
-  .co-branding{
-    padding-bottom: 56px;
-  }
   .design{
     flex-wrap: wrap;
     .design-item{
       width: 100%;
       margin-bottom: 24px;
+      p{
+        font-size: $font-size-xxl;
+        font-style: italic;
+      }
     }
   }
 // recommend
-  .recommend{
-    padding-bottom: 56px;
-  }
   .recommendBox{
     flex-wrap: wrap;
     .peopleCard{
-      width: 50%;
       margin-bottom: 24px;
     }
   }
 // contact
   .contact-text{
-    width: 84.5%;
+    width: calc(100%*10/12);
+    button{
+      width: calc(100%*6/10);
+      margin-left: calc(100%*2/10);
+      margin-right: calc(100%*2/10);
+    }
+
   }
-  input.submit-btn{
-    padding-left: 23.66%;
-    padding-right: 23.66%;
-  }
+  // input.submit-btn{
+  //   padding-left: 23.66%;
+  //   padding-right: 23.66%;
+  // }
 
 }
 
 @media(max-width:767px){
   .container{
-    padding: 0 14px;
+    padding-left: 14px;
+    padding-right: 14px;
   }
 
 // banner
   .banner{
     padding: 144px 0;
-    h3{
+    p{
       font-size: $font-size-base;
     }
     h1{
@@ -274,27 +237,18 @@ input.submit-btn{
   }
 // about
   .about{
-    padding:40px 0;
     .item_cards{
-      width: 100%;
       margin-bottom: 24px;
     }
   }
 // classic
-  .classic{
-    padding:40px 0;
-  }
   .series{
     .series-item{
-      width: 100%;
       margin-left: auto;
       margin-right: auto;
     }   
   }
 // co-branding
-  .co-branding{
-    padding:40px 0;
-  }
   .design-item{
     .designImg1-mb,.designImg2-mb{
       display: block;
@@ -308,12 +262,8 @@ input.submit-btn{
     }
   }
 // recommend
-  .recommend{
-    padding:40px 0;
-  }
   .recommendBox{
     .peopleCard{
-      width: 100%;
       justify-content: center;
       img{
         width: 100%;
@@ -322,20 +272,17 @@ input.submit-btn{
   }  
 
 // contact
-  .contact{
-    padding:40px 0;
-  }
   .contact-text{
     width: 100%;
     padding: 0;
     .checkbox{
       margin-bottom: 0;
     }
-  }
-  input.submit-btn{
-    padding-left: 41%;
-    padding-right: 41%;
-    margin-top: 24px;
+    button{
+      width: 100%;
+      margin-left:  0;
+      margin-right:  0;
+    }
   }
 
 }

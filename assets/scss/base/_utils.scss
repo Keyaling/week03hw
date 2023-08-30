@@ -1,3 +1,40 @@
+// title
+h1{
+    font-size: $font-size-xxxl;//64px
+}
+h2{
+    font-size: $font-size-xxl;//48px
+}
+h3{
+    font-size: $font-size-xl;//32px
+}
+h4{
+    font-size: $font-size-l;//24px
+}
+h5{
+    font-size: $font-size-m;//20px
+}
+h6{
+    font-size: $font-size-base;//16px
+}
+//font_size
+.fs-36px{
+    font-size: $font-size-base*2.25;
+}
+.fs-24px{
+    font-size: $font-size-l;
+}
+.fs-20px{
+    font-size: $font-size-m;
+}
+.fs-18px{
+    font-size: $font-size-base*1.25;
+}
+.fs-14px{
+    font-size: $font-size-s;
+}
+
+//flex
 .d-flex{
     display: flex;
 }
@@ -7,10 +44,57 @@
 .ai-center{
     align-items: center;
 }
-.py-80px{
-    padding: 80px 0px;
+
+//text-排版
+.text-center{
+    text-align: center;
 }
 
+//padding
+.px-12px{
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.pb-16px{
+    padding-bottom: 16px;
+}    
+
+//margin
+.mx-16px{
+    margin-left: 16px;
+    margin-right: 16px;
+}
+.mr-12px{
+    margin-right: 12px;
+}
+.ml-12px{
+    margin-left: 12px;
+}
+
+.mb-8px{
+    margin-bottom: 8px;
+}
+.mb-16px{
+    margin-bottom: 16px;
+}
+.mb-24px{
+    margin-bottom: 24px;
+}
+
+//font-color
+.font-primary{
+    color: $primary-color;
+}
+.font-secondary{
+    color: $secondary-color;
+}
+.font-black{
+    color: $black;
+}
+.font-white{
+    color: $white;
+}
+//font-weight
 .fw-medium{
     font-weight: 500;
 }
@@ -19,4 +103,72 @@
 }
 .fw-bolder{
     font-weight: 900;
+}
+
+//background-color
+
+.bg-primary{
+    background-color: $primary-color;
+}
+.bg-secondary{
+    background-color: $secondary-color;
+}
+.bg-white{
+    background-color: $white;
+}
+
+//rwd排版
+.rwd-1{
+    width: calc(100%/3);
+}
+.rwd-2{
+    width: calc(100%/4);
+}
+//rwd-padding
+.rwd-py1{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.rwd-py2{
+    padding-top: 96px;
+    padding-bottom: 32px;
+}
+@media(max-width:992px){
+    .rwd-1{
+        width: calc(100%/2);
+    }
+    .rwd-2{
+        width: calc(100%/2);
+    }
+    .rwd-py2{
+        padding-top: 80px;
+        padding-bottom: 56px;
+    }
+}
+@media(max-width:767px){
+    // title
+    h1,h2,h3{
+        font-size: $font-size-l;//24px
+    }
+    h4,h5{
+        font-size: $font-size-base;//16px
+    }
+    .rwd-1{
+        width: 100%;
+    }
+    .rwd-2{
+        width: 100%;
+    }
+    .rwd-py1{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .rwd-py2{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    img{
+        width: 100%;;
+    }
+
 }

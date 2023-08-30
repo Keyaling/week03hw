@@ -1,0 +1,40 @@
+.pagination{
+    margin-bottom: 80px;
+    ul{
+        justify-content: center;
+        li{
+            a{
+                padding: 12px 16px;
+                color: #555555;
+            }
+            &:last-child{
+                background-color: #F2F2F2;
+            }
+
+        }
+        .pagination-active{
+            background-color: $black;
+            a{
+                color: $white;
+            }
+        }
+    }
+}
+.pagination_border{
+    border: 1px solid #555555;
+}
+
+@media(max-width:767px){
+    .pagination{
+        margin-bottom: 64px;
+        ul{
+            li{
+                a{
+                    padding: 11px 13px;
+                }
+
+    
+            }
+        }
+    }
+}

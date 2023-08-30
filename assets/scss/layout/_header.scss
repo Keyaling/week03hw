@@ -1,11 +1,9 @@
 .header{
-  background-color: $primary-color;
   a{
-    color: $white;
     font-size: $font-size-m;
+    color: $white;
     &:hover{
       color: $black;
-      // background-color: $white;
     }
   }
 }
@@ -28,6 +26,9 @@
       flex-direction: column;
       padding: 0;
       align-items: inherit;//繼承.header
+    }
+    a{
+      font-size: $font-size-base;
     }
   }
   .logoImg{

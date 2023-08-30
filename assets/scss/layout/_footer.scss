@@ -1,6 +1,4 @@
 .footer{
-    background-color: $primary-color;
-    color: $white;
     padding-top: 48px;
     a{
         color: $white;
@@ -28,18 +26,16 @@
         }
     }
     .footer-contact{
-        font-size: $font-size-xl;
+        font-size: $font-size-base*2.25;
         margin-top: 24px;
         margin-bottom: 32px;
         li{
             margin-bottom: 8px;
         }
-    
-        .material-symbols-outlined{
+        span{
             font-size: $font-size-xxl;
-            margin-right: 16px;
-            display: inline-block;
             vertical-align:top;
+            margin-right: 16px;
         }
     }
 }
@@ -77,6 +73,9 @@
 }
 
 @media(max-width:767px){
+    .footer{
+        padding-top: 24px;
+    }
     .top-info{
         display: flex;
         flex-direction: row-reverse;
@@ -99,13 +98,14 @@
             flex-direction: column;
             align-self: flex-start;
             margin-top:0px;
-            margin-bottom: 24px;
+            margin-bottom: 16px;
             li{
                 margin-bottom: 8px;
     
             }
-            .material-symbols-outlined{
+            span{
                 font-size: $font-size-m;
+                margin-right: 8px;
             }
         
         }

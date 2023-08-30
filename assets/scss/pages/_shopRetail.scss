@@ -1,44 +1,26 @@
 .shop_content{
-    margin: 40px -12px 80px;
+    margin-left: -12px;
+    margin-right: -12px;
+    padding-bottom: 48px;
 }
-.item-content{
-    padding: 0 12px;
-}
+
 .content{
-    border: 1px solid #00000020;
+    width: calc(100%*5/12);
+    padding-left: 12px;
+    padding-right: 12px;
     .shopImg-mb{
         display: none;
     }
 }
-
-.card_header{
-    font-size: $font-size-l;
-    padding: 8px 24px;
-    border-bottom: 1px solid #00000020;
-}
-.card_body{
-    border-top: 1px solid #00000020;
-    padding: 16px 24px;
-    li{
-        margin-bottom: 8px;
+.content_imgBox{
+    width: calc(100%*7/12);
+    padding-left: 12px;
+    padding-right: 12px;
+    display: flex;
+    img{
+        align-items: stretch;
+        object-fit: contain;
     }
-    .material-symbols-outlined{
-        vertical-align: text-bottom;
-        font-size: $font-size-l;
-        line-height: 1;
-    }
-    .address{
-        display: flex;
-        flex-wrap: nowrap;
-    }
-    a{
-        color: $black;
-    }
-}
-
-.mapImg{
-    width: 58%;
-    padding: 0 12px;
 }
 
 @media(max-width:992px){
@@ -46,16 +28,14 @@
         flex-direction: column;
 
     }
-    .item-content{
-        margin-bottom: 24px;
-    }
     .content{
         display: flex;
         justify-content: space-between;
-        align-items: stretch;
-        border: 0;
+        margin-bottom: 24px;
+        width: 100%;
         img{
-            width: 48.4%;
+            width: 50%;
+            padding-right: 12px;
         }
         .shopImg-pc{
             display: none;
@@ -63,25 +43,34 @@
         .shopImg-mb{
             display:block;
         }
+        .content_text{
+            width: 50%;
+            padding-left: 12px;
+        }
     }
-    .card{
-        border: 1px solid #00000020;
-        width: 48.4%;
-    }
-    .mapImg{
+    .content_imgBox{
         width: 100%;
+        img{
+            width: 100%;
+        }
     }
-
 }
 @media(max-width:767px){
+    .shop_content{
+        padding-bottom: 24px;
+
+    }
     .content{
         flex-direction: column;
         img{
             width: 100%;
+            padding-right: 0;
+        }
+        .content_text{
+            width: 100%;
+            padding-left: 0;
         }
 
     }
-    .card{
-        width: 100%;
-    }
+
 }

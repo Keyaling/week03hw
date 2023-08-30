@@ -1,10 +1,11 @@
 @import './base/variables.scss';
 @import './base/reset.scss';
 @import './base/base.scss';
+@import './base/utils.scss';
 @import './layout/header.scss';
 @import './layout/footer.scss';
-@import './base/utils.scss';
-
+@import './components/card.scss';
+@import './components/pagination.scss';
 
 
 @import './pages/index.scss';
@@ -12,5 +13,6 @@
 @import './pages/shops.scss';
 @import './pages/shopRetail.scss';
 @import './pages/blog.scss';
+@import './pages/blogPage.scss';
 @import './pages/faq.scss';
 

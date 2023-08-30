@@ -9,28 +9,155 @@
 </head>
 <body>
     <%- include('./layout/header'); -%>
+    <div class="blog_menu_bar">
+        <div class="container d-flex ai-center jc-space-between">
+            <ul class="d-flex ai-center">
+                <li><a href="#" class="fw-bold">最新消息</a></li>
+                <li><a href="blogPage.html" class="fw-bold">特別企劃</a></li>
+                <li><a href="#" class="fw-bold">新品上市</a></li>
+                <li><a href="#" class="fw-bold">鏡框小知識</a></li>
+            </ul>
+            <div>
+                <a href="#"><span class="material-symbols-outlined search">search</span></a>
+            </div>
+        </div>
+    </div>
     <div class="container">
-        <div class="title">
-            <h2 class="fw-bolder">部落格</h2>
+        <div class="blog_title">
+            <div class="title">
+                <h2 class="fw-bolder">部落格</h2>
+            </div>
         </div>
         <div class="blogs">
             <div class="blog-item d-flex">
-                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/blog-1.png?raw=true" alt="blog圖片1">
-                <div class="blogs-text">
-                    <h3 class="font-red">情人特別企劃</h3>
-                    <div class="card_header d-flex jc-space-between">
-                        <h5 class="fw-medium">2020 Valentine’s Special</h5>
-                        <p>2020/02/14</p>
-                    </div>
-                    <div class="card_body">
-                        <p>一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！ <br>即日起至2/16為止，不論是熱戀情侶、自由自在一個人或是老夫老妻，只要從未來過本店的新朋友，綁定官方LINE好友，都可享專屬優惠⋯⋯</p>
-                    </div>
-                    <div class="card_footer">
-                        <p class="fw-bolder font-red">MORE</p>
-                    </div>
+                <div class="blog-img px-12px">
+                    <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/blog-1.png?raw=true" alt="blog圖片1">
+                </div>
+                <div class="blog_text px-12px">
+                        <div>
+                            <a href="#">
+                                <div class="text_title">
+                                    <h3 class="font-secondary">情人特別企劃</h3>
+                                    <div class="d-flex jc-space-between ai-center">
+                                        <h5 class="fw-medium">2020 Valentine’s Special</h5>
+                                        <p>2020/02/14</p>
+                                    </div>
+                                </div>
+                                <div class="text_body d-flex">
+                                    <p>一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！即日起至2/16為止，不論是熱戀情侶、自由自在一個人或是老夫老妻，只要從未來過本店的新朋友，綁定官方LINE好友，都可享專屬優惠⋯⋯
+                                    </p>
+                                    
+                                </div>
+
+                            </a>
+                        </div>
+                        <div class="text-footer">
+                            <a href="#"><p class="fw-bolder font-secondary">MORE</p></a>
+                        </div>
+                </div>
+            </div>
+            <div class="blog-item d-flex ">
+                <div class="blog-img px-12px">
+                    <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/blog-2.png?raw=true" alt="blog圖片2">
+                </div>
+                <div class="blog_text px-12px">
+                        <div>
+                            <a href="#">
+                                <div class="text_title mb-16px">
+                                    <h3 class="font-secondary">街頭潮人訪問</h3>
+                                    <div class="d-flex jc-space-between ai-center">
+                                        <h5 class="fw-medium">Street Interview</h5>
+                                        <p>2020/02/02</p>
+                                    </div>
+                                </div>
+                                <div class="text_body">
+                                    <p>炎熱的夏季裡，衣著選擇經常希望以簡潔的風格為主，但有時單純只穿搭 T 恤或短袖開襟襯衫，又覺得整體造型度有點不足嗎？那麼不妨可以透過「配件」，為穿搭點綴出與眾不同的視覺層次，而本季有哪些必備的配件系列呢？一起從以下推薦的 3 款單品，讓你瞬間帥氣爆棚散發型男品味⋯⋯</p>
+                                </div>
+
+                            </a>
+                        </div>
+                        <div class="text-footer">
+                            <a href="#"><p class="fw-bolder font-secondary">MORE</p></a>
+                        </div>
+                </div>
+            </div>
+            <div class="blog-item d-flex ">
+                <div class="blog-img px-12px">
+                    <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/blog-3.png?raw=true" alt="blog圖片3">
+                </div>
+                <div class="blog_text px-12px">
+                        <div>
+                            <a href="#">
+                                <div class="text_title mb-16px">
+                                    <h3 class="font-secondary">春季新品上市</h3>
+                                    <div class="d-flex jc-space-between ai-center">
+                                        <h5 class="fw-medium">New Selection</h5>
+                                        <p>2020/02/02</p>
+                                    </div>
+                                </div>
+                                <div class="text_body">
+                                    <p>2020 年春季的光學眼鏡跳脫前幾季流行的復古框型，比起圓框與小方框等文青風格，偏向個性款式的眉框眼鏡成為這一季的耀眼之星。除了經典款式如黑色眉框落在長方形鏡面上，眉宇之間露出專業莊重的特殊氣質，包覆在圓形鏡框上的貓眼型眉框則是強調出特殊設計感，俐落時髦的造型搭配一件簡單的白襯衫就相當有型，是喜愛時尚質感人士絕不能錯過的必備款式⋯⋯</p>
+                                </div>
+
+                            </a>
+                        </div>
+                        <div class="text-footer">
+                            <a href="#"><p class="fw-bolder font-secondary">MORE</p></a>
+                        </div>
+                </div>
+            </div>
+            <div class="blog-item d-flex ">
+                <div class="blog-img px-12px">
+                    <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/blog-4.png?raw=true" alt="blog圖片4">
+                </div>
+                <div class="blog_text px-12px">
+                        <div>
+                            <a href="#">
+                                <div class="text_title mb-16px">
+                                    <h3 class="font-secondary">設計師獨享鏡框優惠</h3>
+                                    <div class="d-flex jc-space-between ai-center">
+                                        <h5 class="fw-medium">Sales for Designer</h5>
+                                        <p>2020/01/18</p>
+                                    </div>
+                                </div>
+                                <div class="text_body">
+                                    <p>2020 年春季的光學眼鏡跳脫前幾季流行的復古框型，比起圓框與小方框等文青風格，偏向個性款式的眉框眼鏡成為這一季的耀眼之星。除了經典款式如黑色眉框落在長方形鏡面上，眉宇之間露出專業莊重的特殊氣質，包覆在圓形鏡框上的貓眼型眉框則是強調出特殊設計感，俐落時髦的造型搭配一件簡單的白襯衫就相當有型，是喜愛時尚質感人士絕不能錯過的必備款式⋯⋯</p>
+                                </div>
+
+                            </a>
+                        </div>
+                        <div class="text-footer">
+                            <a href="#"><p class="fw-bolder font-secondary">MORE</p></a>
+                        </div>
+                </div>
+            </div>
+            <div class="blog-item d-flex ">
+                <div class="blog-img px-12px">
+                    <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/blog-5.png?raw=true" alt="blog圖片5">
+                </div>
+                <div class="blog_text px-12px">
+                        <div>
+                            <a href="#">
+                                <div class="text_title mb-16px">
+                                    <h3 class="font-secondary">抵抗夏日大作戰</h3>
+                                    <div class="d-flex jc-space-between ai-center">
+                                        <h5 class="fw-medium">Summer Special</h5>
+                                        <p>2019/08/07</p>
+                                    </div>
+                                </div>
+                                <div class="text_body">
+                                    <p>2020 年春季的光學眼鏡跳脫前幾季流行的復古框型，比起圓框與小方框等文青風格，偏向個性款式的眉框眼鏡成為這一季的耀眼之星。除了經典款式如黑色眉框落在長方形鏡面上，眉宇之間露出專業莊重的特殊氣質，包覆在圓形鏡框上的貓眼型眉框則是強調出特殊設計感，俐落時髦的造型搭配一件簡單的白襯衫就相當有型，是喜愛時尚質感人士絕不能錯過的必備款式⋯⋯</p>
+                                </div>
+
+                            </a>
+                        </div>
+                        <div class="text-footer">
+                            <a href="#"><p class="fw-bolder font-secondary">MORE</p></a>
+                        </div>
                 </div>
             </div>
         </div>
+        <%- include('./layout/pagination'); -%>
     </div>
     <%- include('./layout/footer'); -%>
 

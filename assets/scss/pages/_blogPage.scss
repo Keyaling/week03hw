@@ -1,0 +1,117 @@
+//breadcrumb
+.tagDisplay{
+    div{
+        margin-right: 15px;
+        color: $primary-color;
+    }
+}
+
+//blog_content
+.blog_content{
+    margin-right: -12px;
+    margin-left: -12px;
+    margin-bottom: 80px;
+}
+.blogRetail{
+    width: calc(100%*8/12);
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.blogRetail_title{
+    margin-bottom: 16px;
+}
+.blog_item{
+    padding-bottom: 40px;
+    img{
+        margin-bottom: 8px;
+    }
+    p{
+        color: #555555;
+    }
+}
+.shareBox{
+    border-bottom: 1px solid #707070;
+}
+.blog_control{
+    padding-top: 24px;
+    a{
+        color: black;
+    }
+}
+.tagsBox{
+    padding-left: 12px;
+    padding-right: 12px;
+    color: $primary-color;
+    width: calc(100%*4/12);
+    p{
+        margin-right: 24px;
+    }
+    .label{
+        vertical-align: middle;
+        font-size: 48px;
+    }
+}
+
+
+@media(max-width:992px){
+    .blogRetail_title{
+        margin-bottom: 24px;
+    }
+    .blog_item{
+        padding-bottom: 24px;
+        img{
+            margin-bottom: 16px;
+        }
+    }
+    .tagsBox{
+        p{
+            margin-right: 16px;
+        }
+        h3{
+            font-size: $font-size-base;
+        }
+        .label{
+            font-size: $font-size-base*1.5;
+        }
+    }
+}
+@media(max-width:767px){
+    .blogPage{
+        .blog_menu_bar{
+            display: block;
+            ul{
+                justify-content: space-between;
+                li{
+                    margin-right: 24px;
+                    &:last-child{
+                        margin-right: 0px;
+                    }
+                }
+            }
+            .searchBox{
+                display: none;
+            }
+        }
+    }
+    .blog_content{
+        margin-bottom: 48px;
+    }
+    .blogRetail{
+        width: 100%;
+    }
+    .blog_item{
+        padding-bottom: 16px;
+        img{
+            margin-bottom: 8px;
+        }
+    }
+    .tagsBox{
+        display: none;
+    }
+    .shareBox{
+        display: none;
+    }
+    .blog_control{
+        display: none;
+    }
+}

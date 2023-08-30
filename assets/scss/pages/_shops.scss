@@ -1,20 +1,20 @@
 .title{
-    padding-top: 96px;
     h2{
         border-left:8px solid #9F1213;
         text-align: start;
         margin-bottom: 32px;
+        margin-left: -4px;
+        padding-left: 16px;
     }
 }
 .title_search{
     font-size: $font-size-l;
+    margin-bottom: 40px;
+    align-items: center;
     select{
         border: 1px solid #CED4DA;
         width: 23.5%;
-        font-size: 18px;
         padding: 6px 12px;
-        display: inline-block;
-        vertical-align:middle;
         color: #495057;
         opacity: 0.75;
         margin-left: 10px;
@@ -22,55 +22,14 @@
     
 }
 .shops{
+    margin-left: -12px;
+    margin-right: -12px;
     align-items: stretch;
     flex-wrap: wrap;
-    margin: 40px -12px 80px;
-    .shop_item{
-        width: 33.33%;
-        padding:0 12px;
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 48px;
-        color: $black;
-
-    }
-    .item-content{
-        border: 1px solid #00000020;
-    }
-    .card_header{
-        font-size: $font-size-l;
-        padding: 8px 24px;
-        border-bottom: 1px solid #00000020;
-    }
-    .card_body{
-        border-top: 1px solid #00000020;
-        padding: 16px 24px;
-        li{
-            margin-bottom: 8px;
-        }
-        .material-symbols-outlined{
-            vertical-align: text-bottom;
-            font-size: $font-size-l;
-            line-height: 1;
-        }
-        .address{
-            display: flex;
-            flex-wrap: nowrap;
-        }
-        a{
-            color: $black;
-        }
-    }
-    .card_footer{
-        a{
-            padding: 16px 13%;
-            text-align: center;
-            color: $white;
-            background-color: $black;
-        }
-    }
 }
-
+.card_border{
+    border: 1px solid #00000020;
+}
 
 @media(max-width:992px){
 
@@ -80,15 +39,8 @@
         }
     }
     .title_search{
-        font-size: $font-size-base;
         select{
             width: 43.7%;//  304px/696px
-        }
-
-    }
-    .shops{
-        .shop_item{
-            width: 50%;
         }
 
     }
@@ -96,24 +48,21 @@
 
 @media(max-width:767px){
     .title{
-        padding-top: 40px;
         h2{
             font-size: $font-size-l;
         }
     }
     .title_search{
+        font-size: $font-size-base;
+        margin-bottom: 24px;
         select{
-            width: 79.5%;//  276px/347px
-            margin-left: 3px;
+            width: 77.6%;
+            margin-left: 8px;
         }
 
     }
     .shops{
         margin-top: 24px;
-        margin-bottom: 64px;
-        .shop_item{
-            width: 100%;
-        }
 
     }    
 }
